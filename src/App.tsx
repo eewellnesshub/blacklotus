@@ -3,7 +3,7 @@ import { ExpandingCTA } from './components/ExpandingCTA'
 
 function App() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <main className="relative min-h-screen flex items-center justify-center">
       <GradientBackground />
       <div className="absolute inset-0 -z-10 bg-black/20" />
 

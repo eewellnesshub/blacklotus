@@ -3,7 +3,7 @@ import { X, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MeshGradient } from '@paper-design/shaders-react'
 
-const TARGET_EMAIL = 'hello@blacklotus.dev' // TODO: change to your contact email
+const TARGET_EMAIL = 'blacklotusenquiry@gmail.com'
 
 const budgetOptions = [
   { value: '<5k', label: '< $5k' },
@@ -156,7 +156,7 @@ export function ExpandingCTA() {
               transition={{ duration: 0.3 }}
               style={{ borderRadius: '24px' }}
               layout
-              className="relative flex h-full w-full overflow-y-auto bg-white transform-gpu will-change-transform"
+              className="relative flex w-full max-h-full overflow-y-auto bg-white transform-gpu will-change-transform"
             >
               <motion.div
                 initial={{ opacity: 0, scale: 2 }}
@@ -164,7 +164,7 @@ export function ExpandingCTA() {
                 exit={{ opacity: 0 }}
                 layout={false}
                 transition={{ duration: 0.15, delay: 0.05 }}
-                className="absolute h-full inset-0 overflow-hidden pointer-events-none"
+                className="absolute inset-0 overflow-hidden pointer-events-none"
                 style={{ borderRadius: '24px' }}
               >
                 <MeshGradient
@@ -174,7 +174,7 @@ export function ExpandingCTA() {
                   swirl={0.1}
                   grainMixer={0}
                   grainOverlay={0}
-                  className="inset-0 sticky top-0"
+                  className="absolute inset-0"
                   style={{ height: '100%', width: '100%' }}
                 />
               </motion.div>
