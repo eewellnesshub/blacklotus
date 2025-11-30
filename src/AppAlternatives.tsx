@@ -1,5 +1,3 @@
-import { GradientBackground } from './components/GradientBackground'
-import { ExpandingButton } from './components/ExpandingButton'
 import Hero from './components/Hero'
 
 function App() {
