@@ -1,5 +1,3 @@
-"use client"
-
 import { GrainGradient } from "@paper-design/shaders-react"
 
 export function GradientBackground() {
@@ -17,7 +15,7 @@ export function GradientBackground() {
         scale={1}
         rotation={0}
         speed={1}
-        colors={["hsl(0, 0%, 100%)", "hsl(0, 0%, 98%)", "hsl(0, 0%, 95%)"]}
+        colors={["#000000", "#18181b", "#06b6d4"]}
       />
     </div>
   )

@@ -3,6 +3,41 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Video Text Mask Styles */
+.video-text-mask {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-text-mask video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.video-text-mask h1 {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: screen;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -117,9 +152,12 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-gray-200 outline-gray-400/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-[#111111] antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
   }
 }

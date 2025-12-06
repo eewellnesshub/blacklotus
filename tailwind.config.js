@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'instrument-serif': ['"Instrument Serif"', 'serif'],
+          sans: ['Switzer', 'Inter', 'system-ui', 'sans-serif'],
+          display: ['Switzer', 'Inter', 'system-ui', 'sans-serif'],
+          impact: ['Switzer', 'Inter', 'system-ui', 'sans-serif'],
       },
+      colors: {
+        'off-black': '#111111',
+      }
     },
   },
   plugins: [],

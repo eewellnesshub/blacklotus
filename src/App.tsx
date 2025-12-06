@@ -1,20 +1,27 @@
-import { GradientBackground } from './components/gradient-background'
-import { ExpandingCTA } from './components/ExpandingCTA'
+import { OverlayMenu } from './components/OverlayMenu'
+import { HeroSection } from './components/HeroSection'
+import { WhatWeDo } from './components/WhatWeDo'
+import { ProjectSlider } from './components/ProjectSlider'
+import { CurtainReveal } from './components/CurtainReveal'
+import { Testimonials } from './components/Testimonials'
+import { GetInTouch } from './components/GetInTouch'
+import { Footer } from './components/Footer'
+import { SmoothScroll } from './components/SmoothScroll'
 
 function App() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center">
-      <GradientBackground />
-      <div className="absolute inset-0 -z-10 bg-black/20" />
-
-      <section className="px-6 flex flex-col items-center gap-6 text-center">
-        <h1 className="font-instrument-serif text-white text-center text-balance font-normal tracking-tight text-5xl sm:text-6xl md:text-7xl">
-          Everything is possible with Black lotus.
-        </h1>
-
-        <ExpandingCTA />
-      </section>
-    </main>
+    <SmoothScroll>
+      <main className="bg-white min-h-screen w-full overflow-x-clip selection:bg-black selection:text-white">
+        <OverlayMenu />
+        <HeroSection />
+        <WhatWeDo />
+        <ProjectSlider />
+        <CurtainReveal />
+        <Testimonials />
+        <GetInTouch />
+        <Footer />
+      </main>
+    </SmoothScroll>
   )
 }
 
